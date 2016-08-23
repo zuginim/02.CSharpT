@@ -1,4 +1,6 @@
 ﻿using System;
+//16.08.23 IEnum test.
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +27,7 @@ namespace Charpter1
     }
 
     public class Deltest {
-        public static void Main() {
+        /*public static void Main() {
             Dele D = new Dele();
             
             Simple1 s1 = new Simple1(D.A);
@@ -37,8 +39,27 @@ namespace Charpter1
             s2(1000);
             s3("Hello");
             Console.ReadLine();
-        }
+        }*/
     }
 
-    
+    /****************** 16.08.23 IEnumerable. *********************/
+    public class Product {
+        public int a = 1;
+        public string test = "test1";
+    }
+    public class IEnumerableTest {
+
+        public static void Main() {
+
+            string[] authors = { "a", "b", "c", "d", "e", "f" };
+            IEnumerator e = authors.GetEnumerator();
+
+            while (e.MoveNext()) {
+                Console.WriteLine(e.Current);
+            }
+            
+            Console.ReadLine();
+
+        }
+    }
 }
