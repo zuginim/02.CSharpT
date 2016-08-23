@@ -201,6 +201,7 @@ namespace Charpter1
         public override void BBB1() {
             Console.WriteLine("BBB2");
         }
+        /*
         public static void Main() {
             FuncB B = new FuncB();
             B.AAA1();  //16.08.23 "AAA2"
@@ -217,6 +218,6 @@ namespace Charpter1
             C.BBB1(); //16.08.23 "BBB1"
 
             Console.ReadLine();
-        }
+        }*/
     }
 }
