@@ -219,5 +219,4 @@ namespace Charpter1
             Console.ReadLine();
         }
     }
-    //16.08.23 Delegate 확인.
 }
